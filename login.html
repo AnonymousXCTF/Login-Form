@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="title" style="text-align: center;">
+        <h1>Log in to your account</h1>
+    </div>
+    <div class="form-content">
+        <i class="fa fa-user"><label for="username" style="margin-left: 5px;">Username</i><br />
+            <input type="text" id="username" spellcheck="false" placeholder="Enter username" style="margin-bottom: 20px; margin-left: 40px; width: 70%;" required /><br />
+        </label>
+        <i class="fa fa-envelope"><label for="email" style="margin-left: 5px;">Email</i><br />
+            <input type="email" id="email" spellcheck="false" placeholder="Enter email" style="margin-bottom: 20px; margin-left: 40px; width: 70%;" required /><br />
+        </label>
+        <i class="fa fa-lock"><label for="password" style="margin-left: 5px;">Password</i><br />
+            <input type="password" id="pass-key" spellcheck="false" placeholder="Enter password" style="margin-left: 40px; width: 70%" required />
+        </label>
+        <button class="login-btn" id="loginbtn">Sign in</button>
+        <h3 class="login-choice" style="text-align: center;">Or sign in with</h3>
+        <a href="https://www.linkedin.com" target="_blank" id="link-target">
+            <i class="fa fa-linkedin" id="linkedin"></i>
+        </a>
+        <a href="https://www.google.com" target="_blank" id="link-target">
+            <i class="fa fa-google" id="google"></i>
+        </a>
+        <a href="https://www.github.com" target="_blank" id="link-target">
+            <i class="fa fa-github" id="github"></i>
+        </a>
+        <a href="https://www.microsoft.com" target="_blank" id="link-target">
+            <i class="fa fa-windows" id="windows"></i>
+        </a>
+        <a href="https://www.amazon.com" target="_blank" id="link-target">
+            <i class="fa fa-amazon" id="amazon"></i>
+        </a>
+        <p class="register-account" style="text-align: center; border-top: 2px solid #000; margin-top: 5px;">Don't have an account?</p>
+        <a href="register.html" id="signup">Create one right away</a>
+    </div>
+</body>
+</html>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+    .form-content {
+        background: #f2f3f4;
+        width: 25%;
+        margin-left: 485px;
+        margin-top: 50px;
+        padding: 25px 25px 25px 25px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    input {
+        outline: none;
+        padding-bottom: 3px;
+    }
+    i {
+        margin-left: 40px;
+    }
+    .login-btn {
+        background: #009dff;
+        color: #fff;  
+        margin-left: 128px; 
+        margin-top: 25px;  
+        border: none; cursor: 
+        pointer; 
+        width: 80px; 
+        height: 5vh;  
+    }
+    .login-btn:hover {
+        background: #58cced;
+    }
+    i {
+        color: #000;
+    }
+    #link-target {
+        text-decoration: none;
+    }
+    #linkedin {
+        margin-left: 40px;
+    }
+    #linkedin:hover {
+        border-bottom: 2px solid #000;
+    }
+    #google:hover {
+        border-bottom: 2px solid #000;
+    }
+    #github:hover {
+        border-bottom: 2px solid #000;
+    }
+    #windows:hover {
+        border-bottom: 2px solid #000;
+    }
+    #amazon:hover {
+        border-bottom: 2px solid #000;
+    }
+    #signup {
+        margin-left: 77px; 
+        text-decoration: none;
+    }
+    #signup:hover {
+        text-decoration: underline;
+    }
+</style>
